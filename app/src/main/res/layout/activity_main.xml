@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"/>
+
+        <Button
+        android:id="@+id/pop"
+        android:textSize="28sp"
+        android:textColor="#ff5722"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pop"
+        android:layout_below="@id/title"
+        />
+
+        <Button
+        android:id="@+id/rock"
+        android:textSize="28sp"
+        android:textColor="#f44336"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rock"
+        android:layout_below="@id/pop"
+        />
+
+        <Button
+        android:id="@+id/latin"
+        android:textSize="28sp"
+        android:textColor="#ec407a"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Latin"
+        android:layout_below="@id/rock"
+        />
+
+        <ImageView
+            android:id="@+id/photo_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/music"
+            android:layout_below="@id/latin"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

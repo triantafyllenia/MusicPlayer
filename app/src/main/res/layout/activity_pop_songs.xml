@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicplayer.PopSongs">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/pop1"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p1"
+            android:padding="4dp"
+            android:textSize="24sp"
+            />
+
+        <Button
+            android:id="@+id/pop2"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p2"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:layout_below="@id/pop1"
+            />
+
+        <Button
+            android:id="@+id/pop3"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p3"
+            android:padding="4dp"
+            android:textSize="24sp"
+            android:layout_below="@id/pop2"
+            />
+
+        <Button
+            android:id="@+id/pop4"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p4"
+            android:textSize="24sp"
+            android:padding="4dp"
+            android:layout_below="@id/pop3"
+            />
+
+        <Button
+            android:id="@+id/pop5"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/p5"
+            android:textSize="24sp"
+            android:padding="4dp"
+            android:layout_below="@id/pop4"
+            />
+
+        <Button
+            android:id="@+id/back"
+            android:textColor="#ff5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:padding="14dp"
+            android:layout_below="@id/pop5"
+            />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
