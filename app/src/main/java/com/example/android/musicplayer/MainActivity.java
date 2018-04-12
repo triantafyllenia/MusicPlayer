@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Context rockSongs = this;
 
-        onRock = (Button) findViewById(R.id.rock);
+        onRock = findViewById(R.id.rock);
 
         onRock.setOnClickListener(new OnClickListener() {
 
@@ -43,12 +43,11 @@ public class MainActivity extends AppCompatActivity {
         setonLatinOnButton(); //this function goes to latin screen
     }
 
-
     public void setonPopOnButton() {
 
         final Context popSongs = this;
 
-        onPop = (Button) findViewById(R.id.pop);
+        onPop = findViewById(R.id.pop);
 
         onPop.setOnClickListener(new OnClickListener() {
 
@@ -64,12 +63,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     public void setonLatinOnButton() {
 
         final Context latinSongs = this;
 
-        onLatin = (Button) findViewById(R.id.latin);
+        onLatin = findViewById(R.id.latin);
 
         onLatin.setOnClickListener(new OnClickListener() {
 

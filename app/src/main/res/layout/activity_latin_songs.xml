@@ -1,80 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.musicplayer.LatinSongs">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-       <Button
-           android:id="@+id/bail"
-           android:textColor="#ec407a"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text="@string/bail"
-           android:padding="4dp"
-           android:textSize="22sp"
-           />
-
-        <Button
-            android:id="@+id/havana"
-            android:textColor="#ec407a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/havana"
-            android:padding="4dp"
-            android:textSize="22sp"
-            android:layout_below="@id/bail"
-            />
-
-        <Button
-            android:id="@+id/samba"
-            android:textColor="#ec407a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/samba"
-            android:padding="4dp"
-            android:textSize="22sp"
-            android:layout_below="@id/havana"
-            />
-
-        <Button
-            android:id="@+id/cha"
-            android:textColor="#ec407a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cha"
-            android:textSize="22sp"
-            android:padding="4dp"
-            android:layout_below="@id/samba"
-            />
-
-        <Button
-            android:id="@+id/rumba"
-            android:textColor="#ec407a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rumba"
-            android:textSize="22sp"
-            android:padding="4dp"
-            android:layout_below="@id/cha"
-            />
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.musicplayer.LatinSongs"/>
 
         <Button
             android:id="@+id/back"
-            android:textColor="#f44336"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/back"
-            android:textSize="24sp"
             android:padding="4dp"
-            android:layout_below="@id/rumba"
+            android:text="@string/back"
+            android:textColor="#f44336"
+            android:textSize="24sp"
             />
-
-    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

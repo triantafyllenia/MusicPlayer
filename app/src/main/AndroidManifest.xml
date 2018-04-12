@@ -24,10 +24,9 @@
         android:label="@string/app_name_pop"
         android:parentActivityName=".MainActivity"/>
 
-        <activity android:name=".LatinSongs">
-        android:label="@string/app_name_latin"
-        android:parentActivityName=".MainActivity"/>
-        </activity>
+        <activity android:name=".LatinSongs"
+            android:label="Latin Songs"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 

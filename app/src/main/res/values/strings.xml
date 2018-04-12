@@ -2,24 +2,13 @@
     <string name="app_name">Music Player </string>
     <string name="app_name_rock">Rock Songs</string>
     <string name="app_name_pop">Pop Songs</string>
-    <string name="app_name_latin">Latin Songs</string>
+    <string name="app_name_latin">Latin songs</string>
     <string name="back">Go Main Page</string>
     <string name="Rock">Rock Songs</string>
     <string name="Pop">Pop Songs</string>
     <string name="Latin">Latin Songs</string>
-    <string name="bail">Bailamos - Enrique Englesias</string>
-    <string name="havana">Camila Cabello - Havana</string>
-    <string name="samba">No Vacancy - OneRepublic</string>
-    <string name="cha">Ay Morena - Miami Latin</string>
-    <string name="rumba">Celine Dion - Falling Into You</string>
     <string name="r1">Rock Song 1</string>
-    <string name="r2">Rock Song 2</string>
-    <string name="r3">Rock Song 3</string>
-    <string name="r4">Rock Song 4</string>
-    <string name="r5">Rock Song 5</string>
+    <string name="l1">Latin Songs</string>
     <string name="p1">Pop Song 1</string>
-    <string name="p2">Pop Song 2</string>
-    <string name="p3">Pop Song 3</string>
-    <string name="p4">Pop Song 4</string>
-    <string name="p5">Pop Song 5</string>
+
 </resources>

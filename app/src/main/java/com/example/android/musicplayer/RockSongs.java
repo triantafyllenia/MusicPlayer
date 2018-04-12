@@ -8,6 +8,10 @@ import android.view.View.OnClickListener;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class RockSongs extends AppCompatActivity {
 
@@ -21,15 +25,35 @@ public class RockSongs extends AppCompatActivity {
 
         // Create an array of Rock Songs
 
-        String[] rockSongs = new String[5];
-        rockSongs[0] = "rock 1";
-        rockSongs[1] = "rock 2";
-        rockSongs[2] = "rock 3";
-        rockSongs[3] = "rock 4";
-        rockSongs[4] = "rock 5";
+        class AndroidRock {
 
-        setonBackOnButton();
+            public AndroidRock(RockSongs rockSongs) {
+            }
 
+            public AndroidRock(String rockSongs, String duration) {
+
+            }
+            void f() {
+                int i;
+                i = 0;
+            }
+        }
+
+        ArrayList<AndroidRock> androidRockArrayList= new ArrayList<AndroidRock>();
+        androidRockArrayList.add(new AndroidRock("Wild Thing", "3:40"));
+        androidRockArrayList.add(new AndroidRock("Back to Black", "3:33"));
+        androidRockArrayList.add(new AndroidRock("No one like you", "3:35"));
+        androidRockArrayList.add(new AndroidRock("Summer of 69", "2:55"));
+        androidRockArrayList.add(new AndroidRock("Rock you like a Hurricane", "3:30"));
+
+        AndroidRock androidRock = new AndroidRock(this);{
+
+            // Get a reference to the ListView, and attach the adapter to the listView.
+
+            ListView listView = (ListView) findViewById(R.id.listview_);
+
+            listView.setAdapter((ListAdapter) listView);
+        }
     }
 
     public void setonBackOnButton() {
@@ -38,7 +62,7 @@ public class RockSongs extends AppCompatActivity {
 
         back =(Button) findViewById(R.id.back);
 
-        back.setOnClickListener(new OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
