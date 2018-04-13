@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import android.widget.LinearLayout;
 import android.widget.ListAdapter;
@@ -26,14 +27,12 @@ public class LatinSongs extends AppCompatActivity {
         setContentView(R.layout.activity_latin_songs);
         setonBackOnButton();
 
-        List<String> latin;
-        latin = null;
+        List<String> latin = Arrays.asList("latin1", "latin2", "latin3");
 
-        ArrayAdapter<String> LatinAdapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, latin);
+        ArrayAdapter<String> AndroidLatin = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,latin );
 
         ListView listView = (ListView) findViewById(R.id.listview_);
-        listView.setAdapter(LatinAdapter);
+        listView.setAdapter(AndroidLatin);
 
 // Create an array of Latin Songs
 

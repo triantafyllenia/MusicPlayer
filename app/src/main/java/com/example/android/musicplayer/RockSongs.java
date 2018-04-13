@@ -7,11 +7,14 @@ import android.content.Context;
 import android.view.View.OnClickListener;
 import android.content.Intent;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class RockSongs extends AppCompatActivity {
 
@@ -22,6 +25,14 @@ public class RockSongs extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rock_songs);
+
+        List<String> rock = Arrays.asList("rock1", "rock2", "rock3");
+
+        ArrayAdapter<String> AndroidRock =
+                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,rock );
+
+        ListView listView = (ListView) findViewById(R.id.listview_);
+        listView.setAdapter(AndroidRock);
 
         // Create an array of Rock Songs
 
@@ -48,11 +59,6 @@ public class RockSongs extends AppCompatActivity {
 
         AndroidRock androidRock = new AndroidRock(this);{
 
-            // Get a reference to the ListView, and attach the adapter to the listView.
-
-            ListView listView = (ListView) findViewById(R.id.listview_);
-
-            listView.setAdapter((ListAdapter) listView);
         }
     }
 

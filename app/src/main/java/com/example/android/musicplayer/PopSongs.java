@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class PopSongs extends AppCompatActivity {
@@ -24,14 +25,13 @@ public class PopSongs extends AppCompatActivity {
         setContentView(R.layout.activity_pop_songs);
         setonBackOnButton();
 
-        List<String> pop;
-        pop = null;
+        List<String> pop = Arrays.asList("pop1", "pop2", "pop3");
 
-        ArrayAdapter<String> popAdapter =
+        ArrayAdapter<String> AndroidPop =
                 new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pop);
 
         ListView listView = (ListView) findViewById(R.id.listview_);
-        listView.setAdapter(popAdapter);
+        listView.setAdapter(AndroidPop);
 
 
         // Create an array of Pop Songs
@@ -55,17 +55,12 @@ public class PopSongs extends AppCompatActivity {
         popSongs.add(new AndroidPop("Zayn dusk till done", "3:40"));
         popSongs.add(new AndroidPop("Like a prayer", "3:33"));
         popSongs.add(new AndroidPop("Only Human", "3:35"));
-        popSongs.add(new AndroidPop("I am i love with your budy", "2:55"));
+        popSongs.add(new AndroidPop("I am in love with your body", "2:55"));
         popSongs.add(new AndroidPop("La vie  belle", "3:30"));
 
         AndroidPop androidPop = new AndroidPop(this);
         {
 
-            // Get a reference to the ListView, and attach the adapter to the listView.
-
-            ListView listView1 = (ListView) findViewById(R.id.listview_);
-
-            listView.setAdapter((ListAdapter) listView);
         }
     }
 
