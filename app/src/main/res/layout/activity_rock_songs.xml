@@ -6,24 +6,36 @@
     tools:context="com.example.android.musicplayer.RockSongs">
 
 
+    <ListView
+        android:id="@+id/rockList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+          </ListView>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/song_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="@string/back"
+        android:textColor="#f44336"
+        android:textSize="24sp"
+        android:layout_below="@+id/rockList" />
 
 
-        <ListView
-            android:id="@+id/rockView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </ListView>
-
-        <Button
-            android:id="@+id/back"
-            android:textColor="#f44336"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/back"
-            android:textSize="24sp"
-            android:padding="4dp"
-            android:layout_below="@id/rock"
-            />
-
-   </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

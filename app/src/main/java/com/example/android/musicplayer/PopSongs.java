@@ -3,15 +3,12 @@ package com.example.android.musicplayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
-import android.view.View.OnClickListener;
 import android.content.Intent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class PopSongs extends AppCompatActivity {
@@ -25,43 +22,41 @@ public class PopSongs extends AppCompatActivity {
         setContentView(R.layout.activity_pop_songs);
         setonBackOnButton();
 
-        List<String> pop = Arrays.asList("pop1", "pop2", "pop3");
+        //Create a new ArrayList for titles
+        List<String> popTitle = new ArrayList<>();
+        popTitle.add("Zayn dusk till done");
+        popTitle.add("Like a prayer");
+        popTitle.add("Only Human");
+        popTitle.add("I am in love with your body");
+        popTitle.add("La vie  belle");
 
-        ArrayAdapter<String> AndroidPop =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pop);
+        //Create a new Arraylist for duration
+        List<String> popDuration = new ArrayList<>();
+        popDuration.add("3:40");
+        popDuration.add("2:10");
+        popDuration.add("3:10");
+        popDuration.add("3:45");
+        popDuration.add("3:25");
 
-        ListView listView = (ListView) findViewById(R.id.listview_);
+        //Get the size of arraylist popSongs
+        int length;
+        length = popTitle.size();
+
+        //Create a new arraylist which will hold the values of title and duration
+        ArrayList<String> popSong = new ArrayList<>(length);
+
+
+        //Add values of popSongs and popDuration on the third array popSong
+        for (int i = 0; i < length; i++)
+        {
+            popSong.add(popTitle.get(i)+ "         " +popDuration.get(i));
+        }
+
+        ArrayAdapter<String> AndroidPop = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, popSong);
+
+        ListView listView = findViewById(R.id.listPop);
         listView.setAdapter(AndroidPop);
 
-
-        // Create an array of Pop Songs
-
-        class AndroidPop {
-
-            public AndroidPop(PopSongs popSongs) {
-            }
-
-            public AndroidPop(String popSongs, String duration) {
-
-            }
-
-            void f() {
-                int i;
-                i = 0;
-            }
-        }
-
-        ArrayList<AndroidPop> popSongs = new ArrayList<AndroidPop>();
-        popSongs.add(new AndroidPop("Zayn dusk till done", "3:40"));
-        popSongs.add(new AndroidPop("Like a prayer", "3:33"));
-        popSongs.add(new AndroidPop("Only Human", "3:35"));
-        popSongs.add(new AndroidPop("I am in love with your body", "2:55"));
-        popSongs.add(new AndroidPop("La vie  belle", "3:30"));
-
-        AndroidPop androidPop = new AndroidPop(this);
-        {
-
-        }
     }
 
 
@@ -69,7 +64,7 @@ public class PopSongs extends AppCompatActivity {
 
         final Context onBack = this;
 
-        back =(Button) findViewById(R.id.back);
+        back = findViewById(R.id.back);
 
         back.setOnClickListener(new View.OnClickListener() {
 
