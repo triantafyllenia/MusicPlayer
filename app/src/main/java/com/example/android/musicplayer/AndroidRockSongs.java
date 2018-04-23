@@ -2,9 +2,9 @@ package com.example.android.musicplayer;
 
 public class AndroidRockSongs {
 
-    private String rockArtistName;
-    private String rockSongName;
-    private String rockDuration;
+    private final String rockArtistName;
+    private final String rockSongName;
+    private final String rockDuration;
 
     public AndroidRockSongs(String vName, String vTitle, String vDuration)
     {
